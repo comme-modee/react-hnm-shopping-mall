@@ -209,5 +209,8 @@
     grid-template-columns: repeat(1, 100%);
     column-gap: none;
   }
+  .product-detail-page { flex-direction: column; gap: initial; }
+  .product-detail-page > .product-img { width: 100%; }
+  .product-detail-page > .product-detail-info { width: 100%; }
 }
 
