@@ -80,7 +80,7 @@
     width: 100vw;
     height: 800px;
 }
-  .login {
+.container > .login {
     width: 450px;
     height: 510px;
     background-color: #fff;
@@ -88,7 +88,7 @@
     border-radius: 6px;
     overflow: hidden;
   }
-  .header {
+.container > .login > .header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,10 +98,10 @@
     font-size: 30px;
     background-color: #727CF5;
   }
-  .header > img {
+.container > .login > .header > img {
     width: 220px;
   }
-  .form {
+.container > .login > .form {
     width: 100%;
     height: 380px;
     display: flex;
@@ -109,20 +109,23 @@
     justify-content: center;
     align-items: center;
   }
-  .wrap {
+.container > .login > .form > .wrap {
     width: 80%;
     height: 70%;
-  }
-  .wrap input {
+}
+.container > .login > .form > .wrap > div {
+  padding-bottom: 20px;
+}
+.container > .login > .form > .wrap input {
     width: 100%;
     height: 38px;
     border: 1px solid #dfdfdf;
     padding-left: 10px;
-  }
-  .wrap input::placeholder {
+}
+.container > .login > .form > .wrap input::placeholder {
     color: #969696;
   }
-  .login-form-btn {
+.container > .login > .form > .login-form-btn {
     width: 70px;
     height: 38px;
     color: #fff;
@@ -193,6 +196,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container { padding: 50px 0; height: initial; }
+  .container > .login { width: 86%; height: 360px; }
+  .container > .login > .header { height: 80px; font-size: 22px; }
+  .container > .login > .form { height: 280px; }
+  .container > .login > .form > .wrap { height: 60%; }
+  .container > .login > .form > .wrap > div { padding-bottom: 10px; }
+
   .logo-container { padding-bottom: 20px; }
   .logo-container > a > img { width: 70px; }
   .product-card-container {
